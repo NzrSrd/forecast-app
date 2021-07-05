@@ -23,11 +23,14 @@ A screenshot of the file structure on the atomic design system:
 
 
 ### Third Party Package
-The only plugin that was used is Axios. 
-- VueAxios: benefits: 
-  - Axios performs automatic transforms of JSON data.
-  - Axios has wide browser support.
-  - Axios uses the data property.
+There are only two plugins that was used Axios and Vue Test Utils. 
+1. VueAxios: benefits: 
+    - Axios performs automatic transforms of JSON data.
+    - Axios has wide browser support.
+    - Axios uses the data property.
+    
+2. Vue Test Utils:
+    - Is the official unit testing utility for Vue. js
     
 
  ## To Run the Project
