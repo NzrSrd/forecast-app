@@ -47,11 +47,6 @@
                 storeState: store.state
             }
         },
-        props: {
-            weatherType: {
-                type: String
-            },
-        },
         computed: {
             updateWeather() {
                 return this.storeState.weatherType
