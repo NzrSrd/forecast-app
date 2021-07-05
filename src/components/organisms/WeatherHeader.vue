@@ -1,17 +1,32 @@
 <template>
     <div class="forecast-main-container">
-        <Cloudiness class="icon-header" :active-icon="updateWeather" />
+        <Cloudiness class="icon-header"
+                    :active-icon="updateWeather"
+                    dimension="100px"
+        />
         <div class="main-info-container">
             <div class="sub-info">
-                <div class="clouds-status">{{ updateWeather }}</div>
-                <div class="max-min-status">{{ storeState.maxTemp + '/' + storeState.minTemp}}</div>
-                <div class="city-location">{{ storeState.cityLocation }}</div>
+                <div class="clouds-status">
+                    {{ updateWeather }}
+                </div>
+                <div class="max-min-status" v-if="storeState.maxTemp">
+                    {{ storeState.maxTemp + '/' + storeState.minTemp}}
+                </div>
+                <div class="city-location">
+                    {{ storeState.cityLocation }}
+                </div>
             </div>
             <div class="main-info">
-                <h1 class="temp-deg">{{storeState.temperature + '&deg;'}}</h1>
+                <h1 class="temp-deg">
+                    {{storeState.temperature + '&deg;'}}
+                </h1>
                 <div class="date">
-                    <h2 class="day">{{ displayDayName }}</h2>
-                    <h2 class="day-month">{{ displayDay + '. ' + displayMonth }}</h2>
+                    <h2 class="day">
+                        {{ displayDayName }}
+                    </h2>
+                    <h2 class="day-month">
+                        {{ displayDay + '. ' + displayMonth }}
+                    </h2>
                 </div>
             </div>
         </div>

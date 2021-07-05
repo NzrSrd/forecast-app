@@ -1,7 +1,13 @@
 <template>
     <div class="forecast-card" @click="updateForecast">
-        <div class="forecast-time">{{ forecastTime }}</div>
-        <Cloudiness :active-icon="weatherType" :key="index"/>
+        <div class="forecast-time">
+            {{ forecastTime }}
+        </div>
+        
+        <Cloudiness dimension="40px"
+                    :active-icon="weatherType"
+                    :key="index"/>
+        
         <div>{{ forecastDeg + '&deg;'}}</div>
     </div>
 </template>

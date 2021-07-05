@@ -20,7 +20,7 @@ export const weatherDataMixin = {
                 .get(url)
                 .then( response => {
                     this.forecast = response.data.list
-                    store.setForcast(this.forecast[0])
+                    store.setForecast(this.forecast[0])
                 })
             return response
         }

@@ -1,9 +1,9 @@
 <template>
     <svg
         fill="none"
-        height="24"
         viewBox="0 0 24 24"
-        width="24"
+        :width="dimension"
+        :height="dimension"
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
     >
@@ -23,6 +23,11 @@
 
 <script>
     export default {
-        name: 'CloudyIcon'
+        name: 'Clouds',
+        props: {
+            dimension: {
+                type: Number
+            },
+        }
     }
 </script>
